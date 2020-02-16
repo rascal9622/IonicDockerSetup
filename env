@@ -1,0 +1,4 @@
+#!/bin/bash
+export IMAGE_NAME="ionic-test"
+export PROD="ionic"
+export PORT="8200"

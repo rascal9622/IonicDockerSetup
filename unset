@@ -1,0 +1,4 @@
+#!/bin/bash
+source ./bin/env
+docker stop $IMAGE_NAME
+docker rm $IMAGE_NAME && docker rmi $IMAGE_NAME/$PROD

@@ -1,0 +1,8 @@
+#!/bin/bash
+source ./env
+docker ps | grep $IMAGE_NAME > /dev/null
+if [ $? -ne 0 ];then
+  docker start $IMAGE_NAME
+fi
+
+docker exec -it $IMAGE_NAME /bin/bash
